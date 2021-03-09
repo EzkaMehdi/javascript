@@ -29,6 +29,6 @@
 
 //console.log("i'm " + age + " years old");8
 
-var changed = "Bonjour";
-changed = changed.replace(/o/g,"a");
-console.log(changed);
+//var changed = "Bonjour";
+//changed = changed.replace(/o/g,"a");
+//console.log(changed);
