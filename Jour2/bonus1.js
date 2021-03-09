@@ -1,10 +1,11 @@
-var random = 
+var random 
+ Math.random();
 var min = 1;
 var max = 6;
 
-Math.floor(Math.random() * (max - min + 1) + min);
+Math.floor(Math.random()* (max - min + 1) + min);
 
-if (random === 6 ) {  
+if (random === max ) {  
     console.log("yes i win !"); 
 
   }
