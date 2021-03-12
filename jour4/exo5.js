@@ -1,6 +1,8 @@
 function addUp(num) {
-    for (var i = 0; i <=num; i++) {  
-        
+     var result = 0;
+    for (i = 1; i <=num; i++) {  
+        result = i + result;
       }
-   };
-   addUp();
+      console.log(result);
+   }
+addUp(12);
