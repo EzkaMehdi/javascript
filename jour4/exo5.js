@@ -5,4 +5,4 @@ function addUp(num) {
       }
       console.log(result);
    }
-addUp(12);
+addUp(122);

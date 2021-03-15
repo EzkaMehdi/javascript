@@ -8,4 +8,5 @@ function checkIfEven(num) {
    }
 
   };
-  checkIfEven();
+  
+  checkIfEven(9);
