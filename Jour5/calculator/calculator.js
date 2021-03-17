@@ -5,20 +5,33 @@
 
 //     ⇒ Si vous ne donnez pas trois arguments, le programme doit afficher "error" dans la console
 
-function calculate(Int1,operator,Int2){
-    
-    if(operator === "+" ){
-        console.log(Int1 + Int2);
-    }
-    if(operator === "-" ){
-        console.log(Int1 - Int2);
-    }
-    if(operator === "x" ){
-        console.log(Int1 * Int2);
-    }
-    if(operator === "/" ){
-        console.log(Int1 / Int2);
-    }
+
+var num1 = process.argv[2];
+var calcul = process.argv[3];
+var num2 = process.argv[4];
+
+if (process.argv.length === 5 ) {
+    calculate(num1, calcul, num2);
+} else {
+    console.log("error");
 }
 
-calculate(4,"x",5);
+function calculate(int1, operator, int2) {
+
+    if (operator === "+") {
+        console.log(int1 + int2);
+    }
+    if (operator === "-") {
+        console.log(int1 - int2);
+    }
+    if (operator === "x") {
+        console.log(int1 * int2);
+    }
+    if (operator === "/") {
+        console.log(int1 / int2);
+    }
+
+
+}
+
+
