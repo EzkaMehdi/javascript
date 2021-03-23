@@ -28,20 +28,21 @@ var cakes = [
 		status: "available"
 	},
 ]
-var epuisé = [
-	
-	{
-		name: "brownie",
-		flavor: "chocolate",
-		status: "sold out !"
-	},
-	{
-		name: "donut",
-		flavor: "chocolate",
-		status: "sold out !"
-	},
-]
 
+var choco = cakes.map(function(elem) {
+    if (elem.flavor === "chocolate"){
+        elem.status = "sold out"
+    }
+    return elem
+})
+
+console.log(choco)
+
+var choco2 = cakes.filter(function(elem){ 
+    return (elem.status === "sold out")
+})
+
+console.log(choco2)
 // ```
 
 // - À l'aide des méthodes `.filter()` et `.map()`, vous donnerez le statut "sold out !" aux gâteaux au chocolat
